@@ -29,7 +29,7 @@ export default function handler(
       };
 
       // Return the fake JWT token
-      res.status(200).json({ payload });
+      res.status(200).json(payload);
     } else {
       // Return an error if email or password is incorrect
       res.status(401).json({ error: "Invalid email or password" });
